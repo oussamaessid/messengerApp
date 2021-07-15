@@ -39,13 +39,14 @@
             android:id="@+id/email_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="Email"
             android:layout_marginTop="10dp"
+            android:hint="Email"
+            android:inputType="text"
             android:textColor="@color/white"
             android:textColorHint="@color/white">
 
         </EditText>
+
         <EditText
             android:id="@+id/password_login"
             android:layout_width="match_parent"

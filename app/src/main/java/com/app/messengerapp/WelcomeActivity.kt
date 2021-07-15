@@ -35,6 +35,7 @@ class WelcomeActivity : AppCompatActivity() {
         firebaseUser = FirebaseAuth.getInstance().currentUser
         if (firebaseUser != null){
             val intent = Intent(this@WelcomeActivity, MainActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
             finish()
         }
